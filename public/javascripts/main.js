@@ -40,7 +40,7 @@ if (room === '') {
   //
 }
 
-var socket = io.connect('http://localhost');
+var socket = io.connect();
 
 if (room !== '') {
   console.log('Create or join room', room);
