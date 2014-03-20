@@ -1,0 +1,13 @@
+extends layout
+
+block content
+  div(id='containter')
+    div(id='videos')
+      video(id='localVideo' autoplay mute)
+      video(id='remoteVideo' autoplay)
+    div(id='textarea')
+      textarea(id='dataChannelSend' disabled placeholder='Press Start, enter some text, then press Send.')
+      textarea(id='dataChannelReceive' disabled)
+    button(id='sendButton' disabled) Send
+
+  script(src='/javascripts/main.js')
